@@ -52,4 +52,5 @@ firefox &
 xbacklight -set 20 &
 redshift -P -O 3579 &
 dunst &
+compton -b &
 exec ~/dwm/startdwm

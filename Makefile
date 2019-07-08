@@ -35,6 +35,7 @@ init: dwm getdunst
 	chmod +x $(CURDIR)/97-powertop.sh
 	ln -vsf $(CURDIR)/.profile $(DUEHOANG)/.profile
 	mkdir -p $(DUEHOANG)/.config/dunst
-	ln -vsf $(CURDIR)/dunst/dunstrc $(DUEHOANG)/.config/dunst
+	ln -vsf $(CURDIR)/dunst/dunstrc $(DUEHOANG)/.config/dunst/dunstrc
+	ln -vsf $(CURDIR)/compton/compton.conf $(DUEHOANG)/.config/compton/compton.conf
 
 .PHONY: init getdwm getdunst
