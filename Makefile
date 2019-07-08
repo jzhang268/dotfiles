@@ -7,5 +7,7 @@ init:
 	ln -vsf $(CURDIR)/grub /etc/default/grub
 	ln -vsf $(CURDIR)/startdwm $(DUEHOANG)/dwm/startdwm
 	chmod +x $(CURDIR)/startdwm
+	ln -vsf $(CURDIR)/97-powertop.sh /etc/runit/core-services/97-powertop.sh
+	chmod +x $(CURDIR)/97-powertop.sh
 
 .PHONY: all init
