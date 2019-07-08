@@ -6,5 +6,6 @@ init:
 	ln -vsf $(CURDIR)/dwm/config.h $(DUEHOANG)/dwm/config.h
 	ln -vsf $(CURDIR)/grub /etc/default/grub
 	ln -vsf $(CURDIR)/startdwm $(DUEHOANG)/dwm/startdwm
+	chmod +x $(CURDIR)/startdwm
 
 .PHONY: all init
