@@ -24,11 +24,8 @@ getdunst:
 		cairo-devel \
 		gtk+3-devel; \
 	fi
-	
-getpowertop:
-	xbps-install -S powertop
 
-init: dwm getdunst getpowertop
+init: dwm getdunst
 	ln -vsf $(CURDIR)/.xinitrc $(DUEHOANG)/.xinitrc
 	ln -vsf $(CURDIR)/dwm/config.h $(DUEHOANG)/dwm/config.h
 	ln -vsf $(CURDIR)/grub /etc/default/grub
@@ -40,4 +37,4 @@ init: dwm getdunst getpowertop
 	mkdir -p $(DUEHOANG)/.config/dunst
 	ln -vsf $(CURDIR)/dunst/dunstrc $(DUEHOANG)/.config/dunst
 
-.PHONY: init getdwm getdunst getpowertop
+.PHONY: init getdwm getdunst
