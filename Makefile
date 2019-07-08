@@ -1,11 +1,13 @@
+DUEHOANG := /home/jzhang268
+
 clonedwm:
-	git clone git://git.suckless.org/dwm ~/dwm
+	git clone git://git.suckless.org/dwm /dwm
 
 init:
-	ln -vsf $(CURDIR)/,xinitrc ~/.xinitrc
-	if [ ! -d "~/dwm" ]; then clonedwm; fi
-	ln -vsf $(CURDIR)/dwm/config.h ~/dwm/config.h
+	ln -vsf $(CURDIR)/,xinitrc $(DUEHOANG)/.xinitrc
+	if [ ! -d "$(DUEHOANG)/dwm" ]; then clonedwm; fi
+	ln -vsf $(CURDIR)/dwm/config.h $(DUEHOANG)/dwm/config.h
 	ln -vsf $(CURDIR)/grub /etc/default/grub
-	ln -vsf $(CURDIR)/startdwm ~/dwm/startdwm
+	ln -vsf $(CURDIR)/startdwm $(DUEHOANG)/dwm/startdwm
 
-.PHONY: checkdwm init
+.PHONY: all checkdwm init
