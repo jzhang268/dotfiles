@@ -37,5 +37,7 @@ init: dwm getdunst getpowertop
 	ln -vsf $(CURDIR)/97-powertop.sh /etc/runit/core-services/97-powertop.sh
 	chmod +x $(CURDIR)/97-powertop.sh
 	ln -vsf $(CURDIR)/.profile $(DUEHOANG)/.profile
+	mkdir -p $(DUEHOANG)/.config/dunst
+	ln -vsf $(CURDIR)/dunst/dunstrc $(DUEHOANG)/.config/dunst
 
 .PHONY: init getdwm getdunst getpowertop
