@@ -48,4 +48,8 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
+firefox &
+xbacklight -set 20 &
+redshift -P -O 3579 &
+dunst &
 exec ~/dwm/startdwm
