@@ -53,4 +53,5 @@ xbacklight -set 20 &
 redshift -P -O 3579 &
 dunst &
 compton -b &
+~/dotfiles/pscircle/pscircle.sh &
 exec ~/dwm/startdwm
