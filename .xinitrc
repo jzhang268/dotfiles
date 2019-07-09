@@ -54,4 +54,5 @@ redshift -P -O 3579 &
 dunst &
 compton -b &
 ~/dotfiles/pscircle/pscircle.sh &
+libinput-gestures-setup start &
 exec ~/dwm/startdwm

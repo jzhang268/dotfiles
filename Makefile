@@ -21,6 +21,6 @@ init: getdwm
 	ln -vsf $(CURDIR)/.profile $(DUEHOANG)/.profile
 	ln -vsf $(CURDIR)/dunst/dunstrc $(DUEHOANG)/.config/dunst/dunstrc
 	ln -vsf $(CURDIR)/compton/compton.conf $(DUEHOANG)/.config/compton/compton.conf
-	ln -vsf $(CURDIR)/dunst/dunstrc $(DUEHOANG)/.config/dunst
+	ln -vsf $(CURDIR)/libinput-gestures/libinput-gestures.conf $(DUEHOANG)/.config/libinput-gestures.conf
 
 .PHONY: init getdwm
