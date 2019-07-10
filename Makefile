@@ -10,7 +10,13 @@ getdwm:
 		freetype-devel; \
 	fi
 
-init: getdwm
+getzzz:
+	if [ ! -d "$(DUEHOANG)/zzz-user-hooks" ]; then \
+		git clone https://github.com/bahamas10/zzz-user-hooks.git $(DUEHOANG)/zzz-user-hooks ; \
+	fi
+		
+
+install: getdwm getzzz
 	ln -vsf $(CURDIR)/.xinitrc $(DUEHOANG)/.xinitrc
 	ln -vsf $(CURDIR)/dwm/config.h $(DUEHOANG)/dwm/config.h
 	ln -vsf $(CURDIR)/grub /etc/default/grub
@@ -26,5 +32,9 @@ init: getdwm
 	chmod +x $(CURDIR)/refind.conf
 	cp $(CURDIR)/refind.conf /boot/efi/EFI/refind/refind.conf
 	ln -vsf $(CURDIR)/i3/config $(DUEHOANG)/.config/i3/config
+	ln -vsf $(CURDIR)/.onsuspend $(DUEHOANG)/.onsuspend
+	chmod +x $(CURDIR)/.onsuspend
+	ln -vsf $(CURDIR)/.onresume $(DUEHOANG)/.onresume
+	chmod +x $(CURDIR)/.onresume
 
-.PHONY: init getdwm
+.PHONY: install getdwm getzzz
