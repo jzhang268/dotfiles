@@ -23,7 +23,7 @@ init: getdwm
 	ln -vsf $(CURDIR)/compton.conf $(DUEHOANG)/.config/compton/compton.conf
 	ln -vsf $(CURDIR)/libinput-gestures.conf $(DUEHOANG)/.config/libinput-gestures.conf
 	ln -vsf $(CURDIR)/sakura.conf $(DUEHOANG)/.config/sakura/sakura.conf
-	ln -vsf $(CURDIR)/refind.conf /boot/efi/EFI/refind/refind.conf
 	chmod +x $(CURDIR)/refind.conf
+	cp $(CURDIR)/refind.conf /boot/efi/EFI/refind/refind.conf
 
 .PHONY: init getdwm
