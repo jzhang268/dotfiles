@@ -36,6 +36,9 @@ smart_gaps on
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# lock screen
+bindsym --release $mod+x exec ~/dotfiles/lock.sh
+
 # start a terminal
 bindsym $mod+Return exec sakura
 
