@@ -56,4 +56,5 @@ compton -b &
 ~/dotfiles/pscircle/pscircle.sh &
 libinput-gestures-setup start &
 nm-applet &
-exec ~/dwm/startdwm
+exec i3
+#exec ~/dwm/startdwm

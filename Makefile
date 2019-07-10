@@ -25,5 +25,6 @@ init: getdwm
 	ln -vsf $(CURDIR)/sakura.conf $(DUEHOANG)/.config/sakura/sakura.conf
 	chmod +x $(CURDIR)/refind.conf
 	cp $(CURDIR)/refind.conf /boot/efi/EFI/refind/refind.conf
+	ln -vsf $(CURDIR)/i3/config $(DUEHOANG)/.config/i3/config
 
 .PHONY: init getdwm
