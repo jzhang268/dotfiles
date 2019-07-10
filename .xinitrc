@@ -55,4 +55,5 @@ dunst &
 compton -b &
 ~/dotfiles/pscircle/pscircle.sh &
 libinput-gestures-setup start &
+nm-applet &
 exec ~/dwm/startdwm

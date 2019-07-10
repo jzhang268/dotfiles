@@ -22,5 +22,6 @@ init: getdwm
 	ln -vsf $(CURDIR)/dunst/dunstrc $(DUEHOANG)/.config/dunst/dunstrc
 	ln -vsf $(CURDIR)/compton/compton.conf $(DUEHOANG)/.config/compton/compton.conf
 	ln -vsf $(CURDIR)/libinput-gestures/libinput-gestures.conf $(DUEHOANG)/.config/libinput-gestures.conf
+	ln -vsf $(CURDIR)/sakura/sakura.conf $(DUEHOANG)/.config/sakura/sakura.conf
 
 .PHONY: init getdwm
