@@ -53,8 +53,9 @@ xbacklight -set 20 &
 redshift -P -O 3579 &
 dunst &
 compton -b &
-~/dotfiles/pscircle/pscircle.sh &
 libinput-gestures-setup start &
 nm-applet &
+start-pulseaudo-x11 &
+xwinwrap -ov -g 1920x1080+0+0 -- mpv -wid WID ~/dotfiles/wall-1041uuu.mp4 --no-osc --no-osd-bar --loop-file --player-operation-mode=cplayer --no-audio --panscan=1.0 --no-input-default-bindings &
 exec i3
 #exec ~/dwm/startdwm
