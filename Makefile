@@ -36,6 +36,7 @@ install: getdwm getzzz
 	chmod +x $(CURDIR)/.onsuspend
 	ln -vsf $(CURDIR)/.onresume $(DUEHOANG)/.onresume
 	chmod +x $(CURDIR)/.onresume
-	ln -vsf /usr/share/X11/xorg.conf.d/40-libinput.conf /etc/X11/xorg.conf.d/40-libinput.conf
+	ln -vsf $(CURDIR)/40-libinput.conf /etc/X11/xorg.conf.d/40-libinput.conf
+	ln -vsf $(CURDIR)/i3blocks/config $(DUEHOANG)/.config/i3blocks/config
 
 .PHONY: install getdwm getzzz
