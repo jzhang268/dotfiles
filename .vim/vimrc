@@ -1,0 +1,34 @@
+set nocompatible
+filetype plugin on
+filetype indent on
+
+syntax on
+set spell
+
+set mouse=a
+set hidden
+
+set backspace=indent,eol,start
+set tabstop=4
+set softtabstop=4
+set breakindentopt=shift:4
+set autoindent
+
+set ruler
+set number
+set showcmd
+set cursorline
+set wildmenu
+set lazyredraw
+set showmatch
+
+set incsearch
+set hlsearch
+
+set foldenable
+set foldlevelstart=10
+set foldnestmax=10
+set foldmethod=indent
+
+nnoremap j gj
+nnoremap j gk
