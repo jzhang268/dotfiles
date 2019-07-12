@@ -37,7 +37,10 @@ smart_gaps on
 floating_modifier $mod
 
 # lock screen
-bindsym --release $mod+x exec ~/dotfiles/lock.sh
+bindsym --release $mod+x exec ~/dotfiles/.onsuspend
+
+# firefox
+bindsym $mod+Shift+Return exec firefox
 
 # start a terminal
 bindsym $mod+Return exec sakura
