@@ -38,5 +38,7 @@ install: getdwm getzzz
 	chmod +x $(CURDIR)/.onresume
 	ln -vsf $(CURDIR)/40-libinput.conf /etc/X11/xorg.conf.d/40-libinput.conf
 	ln -vsf $(CURDIR)/i3blocks/config $(DUEHOANG)/.config/i3blocks/config
+	ln -vsf $(CURDIR)/.vim $(DUEHOANG)/.vim
+	ln -vsf $(CURDIR)/compton-tryone144.conf $(DUEHOANG)/.config/compton.conf
 
 .PHONY: install getdwm getzzz
